@@ -1,5 +1,15 @@
 <script>
 
+    function checkLoginStatus() {
+        var isLoggedIn = {{ Auth::check() ? 'true' : 'false' }};
+        if (!isLoggedIn) {
+            window.location.href = "{{ route('login') }}"; // Redirect to login page
+            return false; // Prevent default link behavior
+        }
+        return true; // Allow navigation if logged in
+    }
+
+
     {{--Notifications--}}
 
     @if (session('pop_error'))

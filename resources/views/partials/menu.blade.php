@@ -32,16 +32,12 @@ use App\Helpers\Qs;  // Import the Qs class here
                         <a href="#"><img src="{{ Auth::user()->photo }}" width="38" height="38" class="rounded-circle" alt="photo"></a>
                     </div>
 
-                    <div class="media-body">
+{{--                     <div class="media-body">
                         <div class="media-title font-weight-semibold">{{ Auth::user()->name }}</div>
                         <div class="font-size-xs opacity-50">
                             <i class="icon-user font-size-sm"></i> &nbsp;{{ ucwords(str_replace('_', ' ', Auth::user()->user_type)) }}
                         </div>
-                    </div>
-
-                    <div class="ml-3 align-self-center">
-                        <a href="" class="text-white"><i class="icon-cog3"></i></a>
-                    </div>
+                    </div> --}}
                 </div>
             </div>
         </div>

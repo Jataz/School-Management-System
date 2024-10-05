@@ -16,7 +16,7 @@ use App\Helpers\Qs;  // Import the Qs class here
 
 <div class="navbar navbar-expand-md navbar-light">
     <div class="mt-2 mr-5">
-        <a href="{{ route('dashboard') }}" class="d-inline-block font-size-lg">
+        <a  class="d-inline-block font-size-lg">
             <img src="{{ asset('global_assets/images/favicon.png') }}" alt="Logo" class="logo" style="height: 40px; vertical-align: middle;">
             {{ Qs::getSystemName() }}
         </a>
